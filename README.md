@@ -1,7 +1,7 @@
 <h1> Jana's Tic-Tac-Toe </h1>
 
 # Live Demo 
-![](https://github.com/janaiscoding/library/blob/main/assets/library-preview.gif)
+![](https://github.com/janaiscoding/tic-tac-toe/blob/main/assets/tictactoe-preview.gif)
 
 - Live preview [here](https://janaiscoding.github.io/tic-tac-toe/).
 - Tic-Tac-Toe Game made with JS, for 2 players.</br>
