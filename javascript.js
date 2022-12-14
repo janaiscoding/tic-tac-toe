@@ -1,5 +1,7 @@
+// what im adding as classes when im placing marks
 const x_class = 'x';
 const circle_class = 'circle';
+
 const winning_combinations = [
     [0,1,2],
     [3,4,5],
@@ -35,25 +37,23 @@ function startGame(){
 }
 
 function handleClick(e){
-    console.log('clicked'); //check if it only registers one click
     const cell = e.target; //what i clicked on
     const currentClass  = circleTurn ? circle_class : x_class; // checks which turn it is 
     //place the mark per click
-    placeMark(cell, currentClass);
+    placeMark(cell, currentClass)
 
     //check for win
     if(checkWin(currentClass)){
-        console.log('winner');
-        endGame(false);
+        endGame(false)
     }
     //check for draw
     else if (isDraw()){
-        endGame(true);
+        endGame(true)
     }
     else {
     //switch turns
-    swapTurns();
-    setBoardHoverClass();
+    swapTurns()
+    setBoardHoverClass()
     }
 }
 
@@ -80,7 +80,7 @@ function checkWin(currentClass){
     return winning_combinations.some(combination => {
         return combination.every(index => {
             //checks if every single cell for every single combination has the current class
-            return cellElements[index].classList.contains(currentClass); 
+            return cellElements[index].classList.contains(currentClass)
         })
     })
 }
